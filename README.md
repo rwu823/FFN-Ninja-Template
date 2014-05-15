@@ -45,7 +45,7 @@
     $ npm install
     
 ## Configuration
-  edit ninja.js
+  Edit ninja.js
   
   ```js
   // set default config for development
@@ -91,6 +91,11 @@
   
   Edit and open the browser check the result.
 
+## Contributors
+Rocky Wu <rwu.tw@ffn.com> - Core code development
+
+Zizi Hsu <zhsu.tw@ffn.com> - Logo design
+
 ## Questions
 
-  rwu.tw@ffn.com
+  <rwu.tw@ffn.com>
