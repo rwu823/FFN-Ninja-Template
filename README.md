@@ -81,7 +81,7 @@
 ## Coding
   Ok, All steps are finished, you can enjoy your coding now. Example here:
   
-  Create a file: `debug.m.html` and save in `templates/p12345` folder 
+  Create a file: `debug.m.html` and save to `templates/p12345` folder 
   
   (recommend add .extname like `.htm` `.css` `.js`, it will support nice syntax color on editor )
   
