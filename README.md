@@ -92,7 +92,7 @@
   Edit and open the browser check the result.
 
 ## Contributors
-Rocky Wu <rwu.tw@ffn.com> - Core code development
+Rocky Wu <rwu.tw@ffn.com> - Code core development
 
 Zizi Hsu <zhsu.tw@ffn.com> - Logo design
 
