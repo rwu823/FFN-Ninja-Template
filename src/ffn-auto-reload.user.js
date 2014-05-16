@@ -48,7 +48,7 @@
   Socket.on('ninja-template', function(o){
     return ({
       'save-local': function(){
-        warn('Save local (' + o.site + '-' + o.lang + '):', o.file)
+        warn('Save local:', o.file)
       },
 
       'error-save-local': function(){
@@ -56,7 +56,7 @@
       },
 
       'publish': function(){
-        warn('Publish: to sandbox')
+        warn('Publish to sandbox (' + o.site + '-' + o.lang + '):', o.file)
       },
 
       'error-publish': function(){
