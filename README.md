@@ -16,7 +16,7 @@
 
   [node.js](http://nodejs.org/download/)
   
-  Browser extension:
+  **Browser extension**:
   
   `Chrome` [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
   
@@ -56,7 +56,7 @@
  
     $ vim ninja.js
   
-  ninja.js:
+ ninja.js *:
   ```js
   // set default config for development
   Ninja.set({
@@ -120,7 +120,7 @@
     $ node ninja commit -h
     
 ## Web Notification
-   Basically `Ninja-Template` support status log on console. But if that's not enough for you, `Ninja-Template` also support Web Notification on `Chrome` and `Firefox`, just allow the browser notification if you need.
+   Basically `Ninja-Template` support status log on console. But if that's not enough for you, `Ninja-Template` also support **Web Notification** on `Chrome` and `Firefox`, just allow the browser notification if you need.
 
 ## Contributors
 Code Core:
