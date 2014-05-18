@@ -4,9 +4,9 @@
   This project is base on Node.js. To help you develop on template like a ninja with flowing speed :)
 
 ## Workflow
-  We all know the current template workflow on FFN is inefficient. So what does `Ninja Template` do:
+  We all know the current template workflow on FFN is inefficient. So what does `Ninja-Template` do:
   
-  `Ninja Template` watch your project directory, after change file it will automate upload, publish to your sandbox and reload browser. Feel magic, right?
+  `Ninja-Template` watch your project directory, after change file it will automate upload, publish to your sandbox and reload browser. Feel magic, right?
 
 ## Prepare
 
@@ -36,17 +36,25 @@
 
     $ cd FFN
     
-  Make project folder, as example: `p12345`
+  Make project folder, as example: `P12345`
   
-    $ mkdir -p templates/p121345
+    $ mkdir -p templates/P121345
     
   Install dependencies:
 
     $ npm install
     
 ## Configuration
-  Edit ninja.js
+
+  Copy `ninja.sample.js` to `ninja.js`
   
+    $ cp ninja.sample.js ninja.js
+    
+  Modify ninja.js
+ 
+    $ vim ninja.js
+  
+  ninja.js:
   ```js
   // set default config for development
   Ninja.set({
@@ -61,9 +69,9 @@
   })
   
   // use new Ninja(option) create new project
-  var p12345 = new Ninja({
+  var P12345 = new Ninja({
     // set project directory, related path: ./templates/[project]
-    project: 'p12345', 
+    project: 'P12345',
     // abbreviation of sites on FFN, default is ffadult
     site: 'ffadult',
     // default is english
@@ -90,6 +98,29 @@
   `templates/p12345/debug.m.html`
   
   Edit and open the browser check the result.
+
+## Command Line
+  `Ninja-Template` support some useful commands, help you to develop more efficient.
+  
+  
+  `Save Template`:
+  
+  You able to save code from remote to local as easy.
+  
+  Please see the help:
+  
+    $ node ninja save -h
+    
+  `Commit to DB`:
+  
+  Please see the help:
+  
+    $ node ninja commit -h
+    
+## Web Notification
+   Basically `Ninja-Template` support status log on console, But if that's not enough for you.
+   
+   `Ninja-Template` also support Web Notification on `Chrome` and `Firefox`, if you need just enable the browser notification.
 
 ## Contributors
 Rocky Wu <rwu.tw@ffn.com> - Code core development

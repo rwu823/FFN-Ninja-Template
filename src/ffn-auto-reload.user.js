@@ -3,10 +3,10 @@
 // @name           ffn-auto-reload
 // @version        2014.5.13
 // @author         Rocky Wu <rwu.tw@ffn.com>
-// @description    Automate reload browser when the sandbox published
+// @description    Automate reload browser after sandbox publish
 // @website        https://github.com/rwu823/FFN-Ninja-Template
-// @updateURL      https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/ffn-auto-reload.user.js
-// @icon           https://raw.github.com/rwu823/FFN/master/template/assets/favicon.png
+// @updateURL      https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/src/ffn-auto-reload.user.js
+// @icon           https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/src/logo-32x32.png
 
 // @include        *adultfriendfinder.com*
 // @include        *alt.com*
@@ -33,17 +33,22 @@
 }(function(){
 
   var Socket = io.connect('http://localhost:35729'),
-    warn = function(){
-      var args = ['%c[Ninja-Template]', 'color:green;'].concat( [].slice.call(arguments) )
 
-      console.warn.apply(console, args)
-    },
+      noti,
 
-    err = function(){
-      var args = ['%c[Ninja-Template]', 'color:red;'].concat( [].slice.call(arguments) )
+      warn = function(){
+        var input = [].slice.call(arguments),
+            args = ['%c[Ninja-Template]', 'color:green;'].concat(input)
 
-      console.error.apply(console, args)
-    }
+        if(noti) noti.close()
+
+        noti = new Notification('[Ninja-Template]', {
+          body: input.join(' '),
+          icon: 'https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/src/logo-32x32.png'
+        })
+
+        console.warn.apply(console, args)
+      }
 
   Socket.on('ninja-template', function(o){
     return ({
@@ -52,7 +57,7 @@
       },
 
       'error-save-local': function(){
-        err('Error', o.statusCode, 'save local, waiting for try again')
+        war('Error', o.statusCode, 'save local, waiting for try again')
       },
 
       'publish': function(){
@@ -60,12 +65,16 @@
       },
 
       'error-publish': function(){
-        err('Error', o.statusCode, 'publish, waiting for try again')
+        warn('Error', o.statusCode, 'publish, waiting for try again')
       },
 
       'reload': function(){
         warn('Reloading browser...')
-        location.reload()
+
+        setTimeout(function(){
+          noti.close()
+          location.reload()
+        }, 100)
       }
     })[o.act]()
   })
