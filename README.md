@@ -81,7 +81,7 @@
 ## Coding
   Ok, All steps are finished, you can enjoy your coding now. Example here:
   
-  Create a file: `debug.m.html` and save in `templates/p12345` folder 
+  Create a file: `debug.m.html` and save to `templates/p12345` folder 
   
   (recommend add .extname like `.htm` `.css` `.js`, it will support nice syntax color on editor )
   
@@ -92,7 +92,7 @@
   Edit and open the browser check the result.
 
 ## Contributors
-Rocky Wu <rwu.tw@ffn.com> - Core code development
+Rocky Wu <rwu.tw@ffn.com> - Code core development
 
 Zizi Hsu <zhsu.tw@ffn.com> - Logo design
 

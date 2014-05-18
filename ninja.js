@@ -2,16 +2,16 @@ var Ninja = require('./src/ninja-core')
 
 Ninja.set({
   developer: 'rwu.tw',
-  password: 'Cv720823',
+  password: '***',
   host: 'dev25',
   port: '21321'
 })
 
-var CD19994 = new Ninja({
-  project: 'CD-19994',
+var p12345 = new Ninja({
+  project: 'p12345',
   site: 'ffadult',
   lang: 'english'
 })
 
 
-CD19994.go()
+p12345.go()
