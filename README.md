@@ -120,7 +120,7 @@
     $ node ninja commit -h
     
 ## Web Notification
-   Basically `Ninja-Template` support status log on console, but if that's not enough for you. `Ninja-Template` also support Web Notification on `Chrome` and `Firefox`, just allow the browser notification if you need.
+   Basically `Ninja-Template` support status log on console. But if that's not enough for you, `Ninja-Template` also support Web Notification on `Chrome` and `Firefox`, just allow the browser notification if you need.
 
 ## Contributors
 Code Core:
