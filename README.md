@@ -1,9 +1,11 @@
 ![Ninja-Template logo](https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/src/logo-720x240.png)
 
 # Ninja Template
+
   This project is base on Node.js. To help you develop on template like a ninja with flowing speed :)
 
 ## Workflow
+
   We all know the current template workflow on FFN is inefficient. So what does `Ninja-Template` do:
   
   `Ninja-Template` watch your project directory, after change file it will automate upload, publish to your sandbox and reload browser. Feel magic, right?
@@ -118,14 +120,16 @@
     $ node ninja commit -h
     
 ## Web Notification
-   Basically `Ninja-Template` support status log on console, But if that's not enough for you.
-   
-   `Ninja-Template` also support Web Notification on `Chrome` and `Firefox`, if you need just enable the browser notification.
+   Basically `Ninja-Template` support status log on console, but if that's not enough for you. `Ninja-Template` also support Web Notification on `Chrome` and `Firefox`, just allow the browser notification if you need.
 
 ## Contributors
-Rocky Wu <rwu.tw@ffn.com> - Code core development
+Code Core:
+  > Rocky Wu <rwu.tw@ffn.com> 
 
-Zizi Hsu <zhsu.tw@ffn.com> - Logo design
+Logo Design:
+  > Zizi Hsu <zhsu.tw@ffn.com> 
+
+  
 
 ## Questions
 
