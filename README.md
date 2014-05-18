@@ -50,7 +50,7 @@
   
     $ cp ninja.sample.js ninja.js
     
-  Modify ninja.js
+  Modify `ninja.js`
  
     $ vim ninja.js
   
@@ -79,7 +79,7 @@
   })
   
   // project go
-  p12345.go()
+  P12345.go()
   ```
   
 ## Start App
