@@ -17,11 +17,8 @@
 
 When you want to update new feature, just run below two:
       
-    $ git pull
+    $ git pull; npm install
     
-===
-
-    $ npm install
     
 
 ## Prepare
