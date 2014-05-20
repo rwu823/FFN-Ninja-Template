@@ -54,7 +54,7 @@ When you want to update new feature, just run below two:
     
   Make project folder, as example: `P12345`
   
-    $ mkdir -p templates/P121345
+    $ mkdir -p templates/P12345
     
   Install dependencies:
 
