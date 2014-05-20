@@ -10,6 +10,20 @@
   
   `Ninja-Template` watch your project directory, after change file it will automate upload, publish to your sandbox and reload browser. Feel magic, right?
 
+
+## Change Log
+
+`Ninja-Tempalte` will increase new useful command in next. Please see the [Change log](https://github.com/rwu823/FFN-Ninja-Template/blob/master/changelog.md).
+
+When you want to update new feature, just run below two:
+      
+    $ git pull
+    
+---
+
+    $ npm install
+    
+
 ## Prepare
 
   [git](http://msysgit.github.io/index.html)
