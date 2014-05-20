@@ -19,7 +19,7 @@ When you want to update new feature, just run below two:
       
     $ git pull
     
----
+===
 
     $ npm install
     
