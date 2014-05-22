@@ -1,24 +1,25 @@
 // ==UserScript==
 // @id             ffn-auto-reload
 // @name           ffn-auto-reload
-// @version        2014.5.13
+// @version        2014.5.20
 // @author         Rocky Wu <rwu.tw@ffn.com>
 // @description    Automate reload browser after sandbox publish
 // @website        https://github.com/rwu823/FFN-Ninja-Template
 // @updateURL      https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/src/ffn-auto-reload.user.js
 // @icon           https://raw.githubusercontent.com/rwu823/FFN-Ninja-Template/master/src/logo-32x32.png
 
-// @include        *adultfriendfinder.com*
-// @include        *alt.com*
-// @include        *friendfinder.com*
-// @include        *asiafriendfinder.com*
-// @include        *seniorfriendfinder.com*
-// @include        *outpersonals.com*
+// @include        *adultfriendfinder.com:*
+// @include        *alt.com:*
+// @include        *friendfinder.com:*
+// @include        *asiafriendfinder.com:*
+// @include        *seniorfriendfinder.com:*
+// @include        *outpersonals.com:*
 // @include        *amigos.com*
-// @include        *frenchfriendfinder.com*
-// @include        *germanfriendfinder.com*
-// @include        *filipinofriendfinder.com*
-// @include        *indianfriendfinder.com*
+// @include        *frenchfriendfinder.com:*
+// @include        *germanfriendfinder.com:*
+// @include        *filipinofriendfinder.com:*
+// @include        *indianfriendfinder.com:*
+// @include        *penthouse.com:*
 
 // @run-at         document-end
 // ==/UserScript==
@@ -57,7 +58,7 @@
       },
 
       'error-save-local': function(){
-        war('Error', o.statusCode, 'save local, waiting for try again')
+        warn('Error', o.statusCode, 'save local, waiting for try again')
       },
 
       'publish': function(){
