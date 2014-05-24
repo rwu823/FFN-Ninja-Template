@@ -1,9 +1,21 @@
+## Template
 
-===
+**ninja save**
 
->  **2014.5.20**
->
-> - Add new command line: ninja deftag
-> - Add new command line: ninja login
-> - Add new command line: ninja lookup
-> - Command for save template: automate add extname
+>  
+
+
+**ninja commit**
+
+>  Commit comment to DB of template
+
+
+## Admin
+
+**ninja login**
+
+>  Alias is `lo`, automate login with default browser
+
+**ninja lookup**
+
+>  
