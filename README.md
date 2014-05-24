@@ -110,25 +110,12 @@ When you want to update new feature, just run below two:
   
   `templates/p12345/debug.m.html`
   
-  Edit and open the browser check the result.
 
 ## Command Line
   `Ninja-Template` support some useful commands, help you to develop more efficient.
   
+  Please see the [command-line.md](https://github.com/rwu823/FFN-Ninja-Template/blob/master/command-line.md).
   
-  `Save Template`:
-  
-  You able to save code from remote to local as easy.
-  
-  Please see the help:
-  
-    $ node ninja save -h
-    
-  `Commit to DB`:
-  
-  Please see the help:
-  
-    $ node ninja commit -h
     
 ## Web Notification
    Basically `Ninja-Template` support status log on console. But if that's not enough for you, `Ninja-Template` also support **Web Notification** on `Chrome` and `Firefox`, just allow the browser notification if you need.
