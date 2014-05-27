@@ -2,14 +2,15 @@ var Ninja = require('./src/ninja-core')
 
 // set default config for development
 Ninja.set({
-  // set your account on FFN
-  developer: 'rwu.tw',
-  // set your password
-  password: '***',
-  // set your sandbox host
-  host: 'dev25',
-  // set you sandbox port
-  port: '21321'
+  developer: 'rwu.tw', // set your account on FFN
+  password: '***', // set your password
+  host: 'dev25', // set your sandbox host
+  port: '21321', // set you sandbox port
+
+  mapLocal: {  // map local file to remote, related path: ./debug/[file]
+    'test.css': 'http://example.com/test.css',
+    'test.js': 'http://example.com/test.js'
+  }
 })
 
 if(typeof Ninja[Ninja.cmd] === 'function') return Ninja[Ninja.cmd]()
@@ -17,12 +18,9 @@ if(typeof Ninja[Ninja.cmd] === 'function') return Ninja[Ninja.cmd]()
 
 // use new Ninja(option) create new project
 var P12345 = new Ninja({
-  // set project directory, related path: ./templates/[project]
-  project: 'P12345',
-  // abbreviation of sites on FFN, default is ffadult
-  site: 'ffadult',
-  // default is english
-  lang: 'english'
+  project: 'P12345', // set project directory, related path: ./templates/[project]
+  site: 'ffadult', // abbreviation of sites on FFN, default is ffadult
+  lang: 'english' // default is all languages
 })
 
 // project go

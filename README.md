@@ -59,41 +59,14 @@ When you want to update new feature, just run below two:
     
 ## Configuration
 
-  Copy `ninja.sample.js` to `ninja.js`
+  Copy `ninja.sample.js` as `ninja.js`
   
     $ cp ninja.sample.js ninja.js
     
   Modify `ninja.js`
  
     $ vim ninja.js
-  
- ninja.js *:
-  ```js
-  // set default config for development
-  Ninja.set({
-    // set your account on FFN
-    developer: 'rwu.tw',
-    // set your password
-    password: '***',
-    // set your sandbox host
-    host: 'dev25',
-    // set you sandbox port
-    port: '21321'
-  })
-  
-  // use new Ninja(option) create new project
-  var P12345 = new Ninja({
-    // set project directory, related path: ./templates/[project]
-    project: 'P12345',
-    // abbreviation of sites on FFN, default is ffadult
-    site: 'ffadult',
-    // default is english
-    lang: 'english' 
-  })
-  
-  // project go
-  P12345.go()
-  ```
+    
   
 ## Start App
 
