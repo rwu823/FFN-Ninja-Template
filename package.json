@@ -1,6 +1,6 @@
 {
   "name": "Ninja-Template",
-  "version": "2014.5.12",
+  "version": "2014.5.27",
   "devDependencies": {
     "chai": "^1.9.1",
     "gulp-mocha": "^0.4.1",
